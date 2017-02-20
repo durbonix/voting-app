@@ -3,5 +3,9 @@ build/
 coverage/
 .eslintcache
 .DS_Store
-npm-debug.log
 
+# misc
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
