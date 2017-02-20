@@ -5,7 +5,7 @@ import {Voting} from './components'
 
 class App extends Component {
   render() {
-    const pair = ['Trainspotting', '28 Days Later']
+    const pair = ['Trainspotting', '28 Days Later', 'Sunshine']
     return (
       <div className="App">
         <Voting pair={pair}/>
