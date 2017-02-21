@@ -1,15 +1,11 @@
 import React from 'react'
+import {Winner} from './Winner'
+import {Vote} from './Vote'
 
 export const Voting = (props) => {
   return  (
     <div className="voting">
-      {props.pair.map(entry => <button
-                                className="voting-button"
-                                value={entry}
-                                onClick={() => props.vote(entry)}
-                                key={entry}>
-                                     {entry}
-                                </button>)}
+      {props.winner ? <Winner winner={props} /> : <Vote {...props}/>}
     </div>
   )
 }
